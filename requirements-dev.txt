@@ -5,6 +5,9 @@ coverage
 flake8
 pytest
 sphinx
+pep8
+pydocstyle
+pylint
 # These are dependencies of various sphinx extensions for documentation.
 ipython
 matplotlib
