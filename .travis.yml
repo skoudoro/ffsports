@@ -1,12 +1,16 @@
 language: python
 python:
-  - 3.4
   - 3.5
   - 3.6
 cache:
   directories:
     - $HOME/.cache/pip
     - $HOME/.ccache  # https://github.com/travis-ci/travis-ci/issues/5853
+
+env:
+  global:
+    # Doctr deploy key for skoudoro/ffsports
+    - secure: "k0oNIhi6Ivcciz6+ovB3BSJ4sOJCiO0tPFU6Bpu/WJT0/hF7ft35oupcEzHUbHMF50i2w9ryAeSdjvjbPiopOcsmxbu3/gggqP8oRZQCSNNqJvABztGEhrZ0cY47oOeqzjY8fWYfBT2y8fZIz36sNfcb4xAwmsouUE+NMv/oRQPKXlxx5kvhBOnbn9X/bY05lxjLmCC7yQ335qtYFngQNDBUkRWfoWu6R1VwsWtJXdhkOIZhrLobgF7W9splw7fc2OkblhNyV0isCLMxUOJ0xHuzV2pdO7U/YQcIiZVgETgcEbRkQ2uxFB6cLAUtbkgp28CClNo6XuGdd6LLq6jhBS2wliyg8clpDAdEi7Z3twwUhIjXM09ovAi4fb0ke/mLdzwHVazs4HXIf7UpckBAQGJLP6Ktch74+oZARFrqiH7zxvGZaTvZYtHIk6zbvtD2jMHbRihDrBVvTVD2bF9MurvxTqCiNQf1aGCHrn1BEOHxP/Ck47cvs5JVTcooeMx4mG4oAj6A88e11/TupjV7Nenl8wOQCA1FJwURx5dkZ5cTkDY4q/gl0QWtBnjmn1pEua8WrSl0oPt6R8Sztbp9RwZJ5qvK39MTuvMfZTXbm0+Pt+qfhP4bHCWYQdkOLszcj4H5quZh7rYU7QtTYPpZclkFHoVanf2AP3UtKhxoriQ="
 
 install:
   # Install this package and the packages listed in requirements.txt.
